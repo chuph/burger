@@ -1,13 +1,8 @@
 <h1> Burgers! </h1>
 
-{{#each burger_data}}
-	{{this.burger_name}}
+{{#each object}}
+	{{this.object}}
 {{/each}}
 
 <h2> Burgers that haven't been eaten!</h2>
 
-<ul>
-	{{#each burgers}}
-		{{#unless this.devoured}}
-			<li>
-				{{this.name}}
